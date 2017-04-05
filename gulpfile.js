@@ -12,7 +12,6 @@ var gulp = require('gulp'),
   concatCss = require('gulp-concat-css'),
   concat = require('gulp-concat'),
   pngquant = require('imagemin-pngquant'),
-
   rigger = require('gulp-rigger'),
   rimraf = require('rimraf'),
 

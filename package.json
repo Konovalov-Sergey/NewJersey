@@ -32,8 +32,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://landstrangerfromnebo@bitbucket.org/boshteam/bosh.git"
+    "url": ""
   },
-  "homepage": "https://bitbucket.org/boshteam/bosh#readme",
+  "homepage": "",
   "devDependencies": {}
 }
