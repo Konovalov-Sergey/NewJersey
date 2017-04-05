@@ -1,0 +1,46 @@
+#indicators
+	position: relative
+	padding: 125px 0 175px
+	text-align: center
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		position: absolute
+		top: 50%
+		margin-top: 45px
+		left: 0
+		z-index: -1
+		height: 1px
+		background: #ff7101
+	.inner
+		h2
+			color: #1c3051
+			margin-bottom: 95px
+		.wrap
+			z-index: 2
+			.indicators
+				width: 25%
+				margin-bottom: 5px
+				.icon
+					width: 90px
+					height: 90px
+					background: url(../img/indicators.png) no-repeat
+					margin: 0 auto
+				.ic-1
+					background-position: 0 0
+				.ic-2
+					background-position: -90px 0
+				.ic-3
+					background-position: -180px 0
+				.ic-4
+					background-position: -270px 0
+				.digit
+					font: 50px Montserrat-Black
+					color: #ff7101
+					text-transform: uppercase
+					margin-bottom: 35px
+				.description
+					font: 15px Montserrat-Regular
+					color: #1c3051
+					text-transform: uppercase
