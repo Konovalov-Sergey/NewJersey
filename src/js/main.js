@@ -26,6 +26,19 @@ $(function() {
 	$( "#opener" ).on( "click", function() {
 		$( "#tel" ).dialog( "open" );
 	});
+//	form-validate
+	$("#consult-form").validate({
+		rules: {
+			consult_form_name: {
+				required: true
+			},
+			consult_form_phone: {
+				required: true,
+				digits: true
+			}
+		}
+	});
+	
 });
 //map
 function initMap() {
