@@ -26,19 +26,62 @@ $(function() {
 	$( "#opener" ).on( "click", function() {
 		$( "#tel" ).dialog( "open" );
 	});
+//	mask phone
+	$('.phone_us').mask("+1 (999) 999-9999");
+	$('.date').mask('99.99.9999');
 //	form-validate
 	$("#consult-form").validate({
 		rules: {
-			consult_form_name: {
+			form_name: {
 				required: true
 			},
-			consult_form_phone: {
+			form_phone: {
 				required: true,
-				digits: true
 			}
 		}
 	});
-	
+	$("#quote-form").validate({
+		rules: {
+			form_name: {
+				required: true,
+			},
+			form_email: {
+				required: true,
+				email: true
+			},
+			form_tel: {
+				required: true,
+			},
+			form_date: {
+				required: true,
+			},
+			form_from: {
+				required: true
+			},
+			form_to: {
+				required: true
+			}
+			
+		}
+	});
+	$("#question-form").validate({
+		rules: {
+			form_name: {
+				required: true,
+			},
+			form_email: {
+				required: true,
+				email: true
+			},
+			form_tel: {
+				required: true,
+			},
+			form_textarea: {
+				required: true
+			}
+			
+		}
+	});
 });
 //map
 function initMap() {

@@ -31,6 +31,7 @@
 				font: 14px/1.6 Montserrat-Regular
 				color: #fff
 		.form
+			position: relative
 			float: left
 			max-width: 720px
 			box-sizing: border-box
@@ -42,11 +43,12 @@
 				width: 338px
 				height: 51px
 				padding-left: 20px
+				margin-left: 20px
+				margin-bottom: 19px
 				border-radius: 26px
 				background-color: transparent
 				border: 1px solid #707782
-				margin-left: 20px
-				margin-bottom: 19px
+				color: #fff
 			select
 				width: 700px
 				height: 51px
@@ -60,14 +62,16 @@
 				option
 					color: #black
 			textarea
+				padding: 19px 0 0 19px
 				width: 700px
 				height: 139px
+				margin-left: 20px
+				margin-bottom: 25px
 				resize: none
 				border-radius: 26px
 				background-color: transparent
 				border: 1px solid #707782
-				margin-left: 20px
-				margin-bottom: 25px
+				color: #fff
 			input[type=submit]
 				background-color: #ff7101
 				color: #fff
@@ -80,5 +84,28 @@
 				font: 14px/1.6 Montserrat-Regular
 				color: #fff
 				margin-left: 20px
-
-    
+			input.error
+				border: 1px solid #eb1313
+				box-shadow: 0 0 5px #eb1313
+			label.error
+				position: absolute
+				font: 12px/12px Montserrat-Light
+				color: #eb1313
+			label#form_name-error
+				top: 147px
+				left: 20px
+			label#form_email-error
+				top: 147px
+				left: 380px
+			label#form_tel-error
+				top: 217px
+				left: 20px
+			label#form_date-error
+				top: 217px
+				left: 380px
+			label#form_from-error
+				top: 287px
+				left: 20px
+			label#form_to-error
+				top: 287px
+				left: 380px

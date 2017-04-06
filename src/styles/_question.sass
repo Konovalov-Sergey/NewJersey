@@ -18,6 +18,7 @@
 				color: #fff
 				text-transform: uppercase
 		.question-form
+			position: relative
 			input
 				padding-left: 19px
 				width: 338px
@@ -26,6 +27,7 @@
 				border-radius: 26px
 				background-color: #ff7101
 				opacity: 0.6
+				color: #fff
 				&::placeholder
 					color: #fff
 			.name
@@ -42,6 +44,7 @@
 				border-radius: 26px
 				background-color: #ff7101
 				opacity: 0.6
+				color: #fff
 				&::placeholder
 					color: #fff
 			button
@@ -56,5 +59,23 @@
 				&:hover
 					background-color: transparent
 					color: #fff
-				
+			input.error, textarea.error
+				border: 1px solid #eb1313
+				box-shadow: 0 0 5px #eb1313
+			label.error
+				position: absolute
+				font: 12px/12px Montserrat-Light
+				color: #eb1313
+			label#form_name-error
+				top: 53px
+				left: 500px
+			label#form_tel-error
+				top: 121px
+				left: 500px
+			label#form_email-error
+				top: 121px
+				left: 858px
+			label#form_textarea-error
+				top: 280px
+				left: 500px
 				
