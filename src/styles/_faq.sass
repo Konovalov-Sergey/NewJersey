@@ -1,28 +1,37 @@
 #faq
-	padding: 94px 0 178px
+	padding: 105px 0 80px
 	h2
-		margin-bottom: 54px
+		margin-bottom: 72px
 		color: #1c3051
-		font-weight: 900
 	#accordion
+		font-family: Montserrat-Light
 		h3
-			padding: 10px 10px 10px 65px
-			font-size: 14px
-			font-weight: 300
+			padding: 13px 0 
+			font: 14px/16px Montserrat-Light
 			text-transform: uppercase
 			color: #1c3051
 			cursor: pointer
-			.minus
+			border: none
+			background: #fff
+			span
+				margin-right: 38px
+			span.ui-icon-triangle-1-e
 				width: 21px
 				height: 21px
-				background: url(../img/faq-accordion_minus.png) no-repeat
-			.plus
+				background: url(../img/faq-accordion_plus.png) no-repeat center
+			span.ui-icon-triangle-1-s
 				width: 21px
 				height: 21px
-				background: url(../img/faq-accordion_plus.png) no-repeat
-		.accordion__text
-			padding-left: 92px
-			margin: 0 45px 0 10px
-			font-size: 14px
-			border-left: 1px solid #c7ccd4
-			color: #1c3051
+				background: url(../img/faq-accordion_minus.png) no-repeat center
+		h3.ui-state-active
+			font-family: Montserrat-Bold
+		div
+			height: auto
+			padding: 5px 0 15px 10px
+			border: none
+			P
+				height: auto
+				padding: 27px 76px 27px 92px
+				font: 14px/21px Montserrat-Light
+				border-left: 1px solid #c7ccd4
+				color: #1c3051
