@@ -28,7 +28,7 @@ $(function() {
 	});
 //	mask phone
 	$('.phone_us').mask("+1 (999) 999-9999");
-	$('.date').mask('99.99.9999');
+	$('.date').mask('9999/99/99');
 //	form-validate
 	$("#consult-form").validate({
 		rules: {
