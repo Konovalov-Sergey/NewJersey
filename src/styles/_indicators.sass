@@ -1,6 +1,6 @@
 #indicators
 	position: relative
-	padding: 125px 0 175px
+	padding: 120px 0 175px 0
 	text-align: center
 	&:after
 		content: ""
@@ -8,23 +8,25 @@
 		width: 100%
 		position: absolute
 		top: 50%
-		margin-top: 45px
-		left: 0
+		margin-top: 38px
 		z-index: -1
+		left: 0
 		height: 1px
 		background: #ff7101
 	.inner
+		padding-left: 40px
 		h2
+			margin-bottom: 80px
 			color: #1c3051
-			margin-bottom: 95px
+			letter-spacing: -1.3px
 		.wrap
-			z-index: 2
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
 			.indicators
-				width: 25%
-				margin-bottom: 5px
 				.icon
 					width: 90px
-					height: 90px
+					height: 85px
 					background: url(../img/indicators.png) no-repeat
 					margin: 0 auto
 				.ic-1
@@ -36,11 +38,12 @@
 				.ic-4
 					background-position: -270px 0
 				.digit
-					font: 50px Montserrat-Black
+					margin-bottom: 13px
+					font: 69px proxima-nova-black
 					color: #ff7101
 					text-transform: uppercase
-					margin-bottom: 35px
+					background: #fff
 				.description
-					font: 15px Montserrat-Regular
+					font: 19px Montserrat-Light
 					color: #1c3051
 					text-transform: uppercase
