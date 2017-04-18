@@ -10,6 +10,11 @@
 	border-bottom: 7px solid #ff7101
 	.inner
 		.logo
+			img
+				max-width: 100%
+				height: auto
+				@media screen and (max-width: 1180px) 
+					width: 180px
 			.location
 				margin-left: 22px
 				padding-left: 20px
@@ -17,25 +22,63 @@
 				font: 13px/16px Montserrat-Regular
 				text-transform: uppercase
 				color: #b5c2d6
+				@media screen and (max-width: 1180px) 
+					font-size: 11px
+				@media screen and (max-width: 590px)
+					display: none
+		.touch-menu
+			display: none
+			width: 40px
+			height: 40px
+			border: 1px solid #ff7101
+			border-radius: 3px
+			background-color: transparent
+			span
+				display: block
+				margin: 5px 4px
+				height: 3px
+				background: #ff7101
+			@media screen and (max-width: 950px) 
+				position: relative
+				display: block
+				float: right
+				margin-right: 15px
+				vertical-align: middle
 		.nav 
 			margin-left: 83px
+			@media screen and (max-width: 1180px) 
+				margin-left: 40px
+			@media screen and (max-width: 950px) 
+				position: absolute
+				top: 70px
+				left: 440px
+				display: none
+				
 			li
 				display: inline-block
 				margin-right: 16px
 				&:last-child
 					margin-right: 0
+				@media screen and (max-width: 950px)
+					display: block
+					background: #1c3051
+					width: 105px
+					padding-left: 10px
 				a
 					display: block
 					font: 14px/45px Montserrat-Regular
 					color: #fff
 					text-transform: uppercase
 					text-decoration: none
+					@media screen and (max-width: 1180px) 
+						font-size: 12px
 					&:hover
 						color: #b3aca8
 		.contacts
 			position: relative
 			padding-right: 18px
 			padding-left: 32px
+			cursor: pointer
 			background: url(../img/header-tel.png) no-repeat left center,
 			url(../img/header-icon.png) no-repeat right center
 			.tel
@@ -44,7 +87,7 @@
 				font: 22px/48px Montserrat-Black
 				text-transform: uppercase
 				color: #fff
+				@media screen and (max-width: 1180px) 
+					font-size: 16px
 				&:hover
-					color: #b3aca8
-				&:after
-		
+					color: #b3aca8	

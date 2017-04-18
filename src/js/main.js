@@ -10,6 +10,16 @@ $(function() {
 	moveSlides: 1,
 	slideMargin: 5
 	});
+//touch-menu
+	$(".touch-menu").on("click", function() {
+		$(".nav").slideToggle();
+	});
+	$(window).resize(function() {
+		var wid = $(window).width();
+		if (wid > 950 && $(".nav").is(':hidden')) {
+			$(".nav").removeAttr('style');
+		}
+	});
 //popup
 	$( "#tel" ).dialog({
 		autoOpen: false,

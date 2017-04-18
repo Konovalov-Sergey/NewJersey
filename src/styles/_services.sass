@@ -1,15 +1,21 @@
 #services
 	padding: 106px 0 118px 0
 	text-align: center
+	@media screen and (max-width: 802px)
+		padding: 50px 0 50px 0
 	.inner
 		padding-left: 11px
 		h2
 			margin-bottom: 86px
 			color: #1c3051
 			letter-spacing: -1px
+			@media screen and (max-width: 802px)
+				margin-bottom: 40px
 		.services
 			padding: 0 0 84px 36px
 			border: 1px solid #ff7101
+			@media screen and (max-width: 450px)
+				padding-left: 10px
 			h4
 				display: inline-block
 				vertical-align: top
@@ -19,22 +25,35 @@
 				text-transform: uppercase
 				color: #1c3051
 				background: #fff
+				@media screen and (max-width: 802px)
+					margin-bottom: 25px
+				@media screen and (max-width: 450px)
+					margin-bottom: 25px
+					font: 18px/22px Montserrat-Regular
 			.services-list
 				text-align: center
 				li
 					display: inline-block
 					width: 16.25%
+					@media screen and (max-width: 1160px)
+						width: 33%
 					a
 						display: block
 						font: 14px Montserrat-Light
 						color: #1c3051
 						text-decoration: none
 						text-transform: uppercase
+						@media screen and (max-width: 1160px)
+							text-align: left
+						@media screen and (max-width: 450px)
+							font: 10px Montserrat-Light
 						img
 							display: block
 							margin-bottom: 12px
+							max-width: 100%
+							height: auto
 							&:hover
-								transform: scale(1.1)
+								transform: scale(1.05)
 							
 
             
