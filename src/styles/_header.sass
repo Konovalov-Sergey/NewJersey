@@ -5,10 +5,11 @@
 	left: 0
 	width: 100%
 	min-width: 320px
-	padding: 28px 0 24px
 	background-color: #1c3051
 	border-bottom: 7px solid #ff7101
 	.inner
+		position: relative
+		padding: 28px 0 24px
 		.logo
 			img
 				max-width: 100%
@@ -41,7 +42,6 @@
 				height: 3px
 				background: #ff7101
 			@media screen and (max-width: 950px) 
-				position: relative
 				display: block
 				float: right
 				margin-right: 15px
@@ -55,10 +55,11 @@
 				margin-left: 40px
 			@media screen and (max-width: 950px) 
 				position: absolute
-				top: 70px
-				left: 440px
+				width: 100%
+				top: 100%
+				margin-top: 6px
 				display: none
-				
+				margin-left: 0
 			li
 				display: inline-block
 				margin-right: 16px
@@ -67,8 +68,8 @@
 				@media screen and (max-width: 950px)
 					display: block
 					background: #1c3051
-					width: 105px
-					padding-left: 10px
+					width: 100%
+					border-bottom: 1px solid #fff
 				a
 					display: block
 					font: 14px/45px Montserrat-Regular
@@ -77,8 +78,12 @@
 					text-decoration: none
 					@media screen and (max-width: 1180px) 
 						font-size: 12px
+					@media screen and (max-width: 950px)
+						padding-left: 10px
+						font: 12px/32px Montserrat-Regular
 					&:hover
-						color: #b3aca8
+						background: #475c7f
+						border-left: 5px solid #fff
 		.contacts
 			position: relative
 			padding-right: 18px

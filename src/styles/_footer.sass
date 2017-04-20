@@ -1,23 +1,40 @@
 #footer
 	background-color: #1c3051
 	padding: 48px 0
+	@media screen and (max-width: 675px)
+		padding: 25px 0
 	.inner
 		padding-right: 0
+		@media screen and (max-width: 675px)
+			text-align: center
+			margin: 0
+		.footer-group
+			float: left
+			@media screen and (max-width: 675px)
+				float: none
+				margin: 0 auto
 		.copy
 			margin-right: 53px
 			font: 20px/25px Montserrat-Black
 			text-transform: uppercase
 			color: #fff
 			letter-spacing: -0.5px
+			@media screen and (max-width: 675px)
+				margin: 0 0 10px 0
+			@media screen and (max-width: 400px)
+				font: 16px/20px Montserrat-Black
 		.design
+			float: right
+			padding-top: 5px
 			color: #fff
-			font-size: 14px/25px Montserrat-Light
-			@media screen and (max-width: 677px)
+			font-size: 14px/22px Montserrat-Light
+			@media screen and (max-width: 675px)
 				float: none
 		ul
-			vertical-align: middle
 			li
 				display: inline-block
-				img
-					margin-right: 23px
-			
+				a
+					display: block
+					img
+						margin-right: 23px
+
