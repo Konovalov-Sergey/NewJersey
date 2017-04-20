@@ -1,9 +1,15 @@
 #faq
 	padding: 103px 0 56px
+	@media screen and (max-width: 700px)
+		padding: 50px 0 50px
 	h2
 		margin-bottom: 62px
 		color: #1c3051
 		letter-spacing: -0.8px
+		@media screen and (max-width: 700px)
+			margin-bottom: 25px
+			font: 25px/25px Montserrat-Black
+			text-align: center
 	#accordion
 		font-family: Montserrat-Light
 		h3
@@ -14,6 +20,8 @@
 			cursor: pointer
 			border: none
 			background: #fff
+			@media screen and (max-width: 700px)
+				font: 12px/16px Montserrat-Light
 			span
 				margin-right: 38px
 			span.ui-icon-triangle-1-e
@@ -35,3 +43,10 @@
 				font: 14px/28px Montserrat-Light
 				border-left: 1px solid #c7ccd4
 				color: #1c3051
+				@media screen and (max-width: 1150px)
+					font: 14px/22px Montserrat-Light
+					padding: 15px 25px 25px 35px
+				@media screen and (max-width: 700px)
+					font: 12px/18px Montserrat-Light
+					padding: 15px 15px 15px 25px
+				

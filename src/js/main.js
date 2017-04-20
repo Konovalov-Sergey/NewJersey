@@ -5,7 +5,7 @@ $(function() {
 	$('.bxslider').bxSlider({
 	mode: 'horizontal',
 	slideWidth: 350,
-	minSlides: 2,
+	minSlides: 1,
 	maxSlides: 3,
 	moveSlides: 1,
 	slideMargin: 5

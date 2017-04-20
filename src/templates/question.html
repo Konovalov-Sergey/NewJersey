@@ -8,12 +8,21 @@
 				Ask your question to the manager, and during the day we will call you back and answer your question?
 			</p>
 		</div>
-		<div class="question-form">
-			<form action="#" method="#" id="question-form">
-				<input type="text" name="form_name" class="name" placeholder="Full name">
-				<input type="tel" name="form_tel" class="phone phone_us" placeholder="Phone">
-				<input type="email" name="form_email" placeholder="E-mail">
-				<textarea name="form_textarea" id="" cols="30" rows="10" placeholder="Question"></textarea>
+		<div class="question-form left">
+			<form id="question-form">
+				<div class="question-form__field">
+					<input type="text" name="form_name" placeholder="Full name">
+				</div>
+				
+				<div class="question-form__group">
+					<input type="tel" name="form_tel" class="phone_us" placeholder="Phone">
+				</div>
+				<div class="question-form__group">
+					<input type="email" name="form_email" placeholder="E-mail">
+				</div>
+				<div class="question-form__field">
+					<textarea name="form_textarea" id="" cols="30" rows="10" placeholder="Question"></textarea>
+				</div>
 				<button class="right" type="submit">Ask</button>
 			</form>
 		</div>

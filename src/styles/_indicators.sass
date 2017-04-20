@@ -1,6 +1,5 @@
 #indicators
 	position: relative
-	padding: 120px 0 175px 0
 	text-align: center
 	&:after
 		content: ""
@@ -13,17 +12,25 @@
 		left: 0
 		height: 1px
 		background: #ff7101
+		@media screen and (max-width: 580px)
+			display: none
 	.inner
-		padding-left: 40px
+		padding: 120px 0 175px 40px
+		@media screen and (max-width: 580px)
+			padding: 60px 0 60px 0
 		h2
 			margin-bottom: 80px
 			color: #1c3051
 			letter-spacing: -1.3px
+			@media screen and (max-width: 580px)
+				margin-bottom: 40px
 		.wrap
 			display: flex
 			flex-wrap: wrap
 			justify-content: space-between
 			.indicators
+				@media screen and (max-width: 840px)
+					flex-basis: 50%
 				.icon
 					width: 90px
 					height: 85px
@@ -43,7 +50,11 @@
 					color: #ff7101
 					text-transform: uppercase
 					background: #fff
+					@media screen and (max-width: 580px)
+						font: 45px proxima-nova-black
 				.description
 					font: 19px Montserrat-Light
 					color: #1c3051
 					text-transform: uppercase
+					@media screen and (max-width: 580px)
+						font: 12px Montserrat-Light

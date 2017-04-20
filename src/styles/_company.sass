@@ -5,20 +5,24 @@
 	.inner
 		position: relative
 		padding: 78px 10px 64px
-		.before
+		.line1
 			position: absolute
 			left: 0
 			top: -20px
 			width: 704px
 			height: 20px
 			background: #ff7101
-		.after
+			@media screen and (max-width: 760px)
+				width: 300px
+		.line2
 			position: absolute
 			left: 0
 			bottom: -20px
 			width: 704px
 			height: 20px
 			background: #ff7101
+			@media screen and (max-width: 760px)
+				width: 300px
 		h2
 			margin-bottom: 45px
 			color: #fff
@@ -26,11 +30,19 @@
 		.company-cnt
 			margin-bottom: 48px
 			&__img
-				margin-right: 60px
+				margin-right: 60px	
+				@media screen and (max-width: 731px)
+					display: block
+					width: 100%
+				img
+					width: 100%
+					height: auto
 			&__text
 				font: 16px/26px Montserrat-Light
 				color: #fff
 				letter-spacing: -0.5px
+				@media screen and (max-width: 731px)
+					font: 16px/18px Montserrat-Light
 				.first
 					margin-bottom: 25px 
 		.company-comment
@@ -53,4 +65,7 @@
 					font: 16px/26px Montserrat-Light
 					color: #fff
 					letter-spacing: -0.48px
+					@media screen and (max-width: 731px)
+						font: 16px/18px Montserrat-Light
+						padding-right: 0px
 					
