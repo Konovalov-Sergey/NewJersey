@@ -35,16 +35,20 @@
 				li
 					display: inline-block
 					width: 16.25%
+					text-align: center
 					@media screen and (max-width: 1160px)
 						width: 33%
+					@media screen and (max-width: 630px)
+						:nth-child(odd)
+							margin-right: 10px
 					a
-						display: block
+						display: inline-block
+						text-align: center
+						margin: 0 auto
 						font: 14px Montserrat-Light
 						color: #1c3051
 						text-decoration: none
 						text-transform: uppercase
-						@media screen and (max-width: 1160px)
-							text-align: left
 						@media screen and (max-width: 450px)
 							font: 10px Montserrat-Light
 						img
